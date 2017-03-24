@@ -38,6 +38,10 @@ The default Docker image to use. Required when executor is `docker`.
 The tags assigned to the runner,
 Defaults to an empty list.
 
+`gitlab_runner_package_state`
+The state of the package to use,
+Defaults to *latest*.
+
 See the [config for more options](https://github.com/riemers/ansible-gitlab-runner/blob/master/tasks/register-runner.yml)
 
 Example Playbook
@@ -62,4 +66,5 @@ gitlab_runner_tags:
 gitlab_runner_docker_volumes:
   - "/var/run/docker.sock:/var/run/docker.sock"
   - "/cache"
+gitlab_runner_package_state: present
 ```

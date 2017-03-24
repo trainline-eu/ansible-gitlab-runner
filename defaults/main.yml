@@ -14,3 +14,5 @@ gitlab_runner_executor: 'shell'
 gitlab_runner_docker_image: ''
 # Runner tags
 gitlab_runner_tags: []
+# Package ensure
+gitlab_runner_package_state: latest

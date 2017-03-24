@@ -25,5 +25,5 @@
 - name: Install GitLab Runner
   yum:
     name: gitlab-ci-multi-runner
-    state: latest
+    state: {{ gitlab_runner_package_state }}
     update_cache: yes
